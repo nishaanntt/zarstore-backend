@@ -1,7 +1,7 @@
 const ErrorHandler = require('../utils/errorHandler');
 const catchAsyncErrors = require('../middlewares/catchAsyncErrors');
 const User = require('../models/user.model');
-const sendToken = require('../middlewares/jwtToken');
+const sendToken = require('../utils/jwtToken');
 
 // Register
 exports.register = catchAsyncErrors(async (req, res, next) => {
